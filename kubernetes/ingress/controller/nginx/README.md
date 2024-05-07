@@ -315,17 +315,17 @@ Now notice the following routing:
 ```
 kubectl -n ingress-nginx logs -l app.kubernetes.io/instance=ingress-nginx
 ```
-It's important to study the logs of the Ingress Controller to learn what path it saw, where it routed to
+It's important to study the logs of the Ingress Controller to learn what path it saw (同时也是浏览器中所看到的path), where it routed to
 
 ```
-127.0.0.1 - - [13/Nov/2022:02:17:47 +0000] "GET /path-a/path.html HTTP/2.0" 404 19 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" 485 0.000 [default-service-a-80] [] 10.244.0.8:80 19 0.000 404 206ed4b88b712564fc073c3adb845dff
+127.0.0.1 - - [13/Nov/2022:02:17:47 +0000] "GET /path-b/path-a.html HTTP/2.0" 404 19 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" 485 0.000 [default-service-a-80] [] 10.244.0.8:80 19 0.000 404 206ed4b88b712564fc073c3adb845dff
 ```
 
-In the above case, the controller saw ` /path-a/path.html` , routed to service-a and we can see what our service-a saw, by looking at its logs:
+In the above case, the controller saw `/path-b/path-a.html` , routed to service-a and we can see what our service-a saw, by looking at its logs:
 
 ```
 kubectl logs -l app=service-a
-10.244.0.7 - - [13/Nov/2022:02:28:36 +0000] "GET /path-a.html HTTP/1.1" 200 28 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+10.244.0.7 - - [13/Nov/2022:02:17:47 +0000] "GET /path-a.html HTTP/1.1" 200 28 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
 ```
 
 
