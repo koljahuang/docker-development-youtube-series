@@ -1,3 +1,5 @@
+{{video https://www.youtube.com/watch?v=72zYxSxifpM}}
+
 # Introduction to NGINX Ingress Controller
 
 ## Create a kubernetes cluster
