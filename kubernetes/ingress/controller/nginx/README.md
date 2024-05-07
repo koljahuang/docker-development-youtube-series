@@ -1,7 +1,5 @@
-<video width="320" height="240" controls>
-  <source src="https://youtu.be/72zYxSxifpM" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<a href="https://youtu.be/72zYxSxifpM" title="nginx controller"><img src="https://i.ytimg.com/vi/hoLUigg4V18/hqdefault.jpg" width="20%" alt="introduction to certmanager" /></a>
+
 
 # Introduction to NGINX Ingress Controller
 
