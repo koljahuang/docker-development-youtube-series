@@ -1,4 +1,4 @@
-![Video Title](https://www.youtube.com/watch?v=72zYxSxifpM)
+![Video Title](https://youtu.be/72zYxSxifpM)
 
 # Introduction to NGINX Ingress Controller
 
