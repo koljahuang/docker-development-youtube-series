@@ -1,4 +1,4 @@
-<a href="https://youtu.be/72zYxSxifpM" title="nginx controller"><img src="[https://i.ytimg.com/vi/hoLUigg4V18/hqdefault.jpg](https://i.ytimg.com/vi/72zYxSxifpM/hqdefault_327966.jpg)" width="20%" alt="introduction to certmanager" /></a>
+<a href="https://youtu.be/72zYxSxifpM" title="nginx controller"><img src="https://i.ytimg.com/vi/hoLUigg4V18/hqdefault.jpg" width="20%" alt="introduction to certmanager" /></a>
 
 
 # Introduction to NGINX Ingress Controller
