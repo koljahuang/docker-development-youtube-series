@@ -173,7 +173,7 @@ To showcase this, let's deploy an ingress for service-a and service-b that route
 
 Example Ingress:
 
-```
+```yaml
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
