@@ -1,4 +1,7 @@
-![Video Title](https://youtu.be/72zYxSxifpM)
+<video width="320" height="240" controls>
+  <source src="https://youtu.be/72zYxSxifpM" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 # Introduction to NGINX Ingress Controller
 
