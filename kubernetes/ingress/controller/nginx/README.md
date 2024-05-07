@@ -342,6 +342,8 @@ We can enable SSL pass through with the annotation: `nginx.ingress.kubernetes.io
 
 SSL Passthrough is disabled by default and requires starting the controller with the --enable-ssl-passthrough flag. </br>
 
+This annotation which will tell the Ingress controller to pass through the TLs so it doesn't need to decrypt the packet it'll just pass it to your service A and B but that means your service A and B needs to be configured to read and decrypt SSL. (安全性高了，维护的成本也高了)
+
 ### IP Whitelist
 
 We can add a layer of protection to our services that are exposed by an ingress. </br>
