@@ -47,7 +47,7 @@ chmod +x /usr/local/bin/helm
 
 ```
 
-### test cluster access:
+### test cluster access inside docker container:
 ```
 /work # kubectl get nodes
 NAME                    STATUS   ROLES    AGE   VERSION
