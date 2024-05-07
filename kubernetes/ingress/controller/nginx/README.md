@@ -191,6 +191,8 @@ spec:
             name: service-a
             port:
               number: 80
+
+# to forward all traffic from the root path on this domain forward it to service a on Port 80
 ```
 
 <i>Note: we don't own public domain `public.my-services.com` so we're using a `/etc/hosts` file</i>
