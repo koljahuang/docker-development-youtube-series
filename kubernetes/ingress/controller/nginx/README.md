@@ -22,6 +22,7 @@ nginx-ingress-control-plane   Ready    control-plane,master   2m12s   v1.23.5
 ```
 docker run -it --rm -v ${HOME}:/root/ -v ${PWD}:/work -w /work --net host alpine sh
 ```
+`-v ${HOME}:/root/`的原因：`.cube`文件夹在家目录下，容器内就可以访问刚才创建出来的k8s集群
 
 ### install some tools
 
